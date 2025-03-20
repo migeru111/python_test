@@ -44,6 +44,7 @@ def test_patch_autospec(mock_usecase_class):
     """
     a = Mock()
     a.execute
+    # モックにはメソッドが自動追加されるので、エラーが起きない
     a.exec
     
     # mock_usecase.exec
